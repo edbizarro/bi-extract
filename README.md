@@ -1,6 +1,5 @@
 # Bi Extract
 
-* Research
-  * CSV extract
-  * yeld
-  * pipeline
+### Default Extractors
+  
+  * CSV extract  
