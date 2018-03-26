@@ -2,7 +2,7 @@
 
 > Extract data from sources
 
-![examnple](example.png)
+![examnple](csv-extractor.png)
 
 ### Default Extractors
   
