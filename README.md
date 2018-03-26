@@ -29,5 +29,5 @@ $result->each(function($row) {
   // var_dump($row);
 });
 ```
-[![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract) [![forthebadge](https://forth
+[![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)][![forthebadge](https://forth
 ebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
