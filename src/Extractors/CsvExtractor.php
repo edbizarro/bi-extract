@@ -4,7 +4,7 @@ namespace Edbizarro\BiExtract\Extractors;
 
 use Tightenco\Collect\Support\Collection;
 
-class CsvExtractor
+class CsvExtractor extends Extractor
 {
     /**
      * Extractor columns.
