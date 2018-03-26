@@ -4,7 +4,7 @@
 
 > Extract data from sources
 
-[![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
+[![pipeline status](https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg)]
 
 
 ![csv-example-extractor](csv-extractor.png)
@@ -29,4 +29,5 @@ $result->each(function($row) {
   // var_dump($row);
 });
 ```
-
+[![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract) [![forthebadge](https://forth
+ebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com
