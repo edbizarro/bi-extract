@@ -12,9 +12,11 @@
 <?php
 
 /**
-  name,email
-  John Doe,johndoe@example.org
-**/ 
+ *  Example CSV
+ *
+ *  name,email
+ *  John Doe,johndoe@example.org
+ */ 
 $result = (new CsvExtractor)->extract('PATH/TO/CSV');
 
 $result->each(function($row) {
