@@ -30,7 +30,7 @@ class CsvExtractor extends Extractor
     public function extract($source): Collection
     {
         $handle = fopen($source, 'rb');
-        $return = collect();
+        $return = new Collection();
 
         while ($row = fgets($handle)) {
             if (!$this->columns) {
