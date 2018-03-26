@@ -7,6 +7,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 
 
+![csv-example-extractor](csv-extractor.png)
 ---
 
 ### Default Extractors
