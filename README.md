@@ -2,7 +2,7 @@
 
 > Extract data from sources
 
-![csv-extractor-example](csv-extractor.png)
+![csv-extractor-example](https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png)
 
 ### Default Extractors
   
