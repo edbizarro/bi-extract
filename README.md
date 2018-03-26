@@ -4,7 +4,7 @@
 
 > Extract data from sources
 
-[![pipeline status](https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg)]
+[![pipeline status](https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg)](https://gitlab.com/edbizarro/bi-extract/commits/master)
 
 
 ![csv-example-extractor](csv-extractor.png)
@@ -30,4 +30,4 @@ $result->each(function($row) {
 });
 ```
 [![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract) [![forthebadge](https://forth
-ebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com
+ebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
