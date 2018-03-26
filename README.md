@@ -7,7 +7,8 @@
 [![pipeline status](https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg)](https://gitlab.com/edbizarro/bi-extract/commits/master)
 
 
-![csv-example-extractor](csv-extractor.png)
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png"></p>
+
 ---
 
 ### Default Extractors
