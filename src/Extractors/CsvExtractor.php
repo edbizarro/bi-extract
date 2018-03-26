@@ -33,7 +33,7 @@ class CsvExtractor extends Extractor
         $return = collect();
 
         while ($row = fgets($handle)) {
-            if (! $this->columns) {
+            if (!$this->columns) {
                 $this->columns = $this->makeColumns($row);
             } else {
                 $return->push($this->makeRow($row));
@@ -47,7 +47,8 @@ class CsvExtractor extends Extractor
     /**
      * Converts the row string to array.
      *
-     * @param  string  $row
+     * @param string $row
+     *
      * @return array
      */
     protected function makeRow(string $row): array
@@ -57,12 +58,15 @@ class CsvExtractor extends Extractor
         foreach ($this->columns as $column => $index) {
             $data[$column] = $row[$index - 1];
         }
+
         return $data;
     }
+
     /**
      * Make columns based on csv header.
      *
-     * @param  string  $header
+     * @param string $header
+     *
      * @return array
      */
     protected function makeColumns(string $header): array
@@ -71,6 +75,7 @@ class CsvExtractor extends Extractor
         foreach ($columns as $key => $index) {
             $columns[$key] = $index + 1;
         }
+
         return $columns;
     }
 }

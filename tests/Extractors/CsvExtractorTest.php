@@ -10,9 +10,9 @@ class CsvExtractorTest extends TestCase
 {
     public function test_can_extract_a_csv()
     {
-        $result = (new CsvExtractor)->extract(__DIR__.'/../Extractors/stubs/csv-extracsv-stub.csv');
+        $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-extracsv-stub.csv');
 
-        $result->each(function($row) {
+        $result->each(function ($row) {
             dd($row);
         });
         $this->assertInstanceOf(Collection::class, $result);
