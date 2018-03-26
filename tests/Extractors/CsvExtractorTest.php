@@ -12,9 +12,6 @@ class CsvExtractorTest extends TestCase
     {
         $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-extracsv-stub.csv');
 
-        $result->each(function ($row) {
-            dd($row);
-        });
         $this->assertInstanceOf(Collection::class, $result);
         $this->assertCount(1, $result);
     }
