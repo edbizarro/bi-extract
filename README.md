@@ -21,10 +21,5 @@ $result = (new CsvExtractor)->extract('PATH/TO/CSV');
 
 $result->each(function($row) {
   // var_dump($row);
-  // Output
-  array:2 [
-    "name" => "John Doe"    
-    "email" => "johndoe@example.org"
-  ] 
 });
 ```
