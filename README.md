@@ -1,11 +1,19 @@
-# Bi Extract                                                                 
+<p align="center">
+  <h2>BI - Extract</h2>
+</p>
 
 > Extract data from sources
 
-![csv-extractor-example](https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png)
+---
+
+
+
+[![Github All Releases](https://img.shields.io/github/downloads/edbizarro/bi-extract/total.svg?style=for-the-badge)](https://github.com/edbizarro/bi-extract)
+
+[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 
 ### Default Extractors
-  
+
 #### CSV
 
 ```php
@@ -23,3 +31,4 @@ $result->each(function($row) {
   // var_dump($row);
 });
 ```
+
