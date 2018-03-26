@@ -2,7 +2,6 @@
 
 namespace Edbizarro\BiExtract\Extractors;
 
-use Edbizarro\BiExtract\Interfaces\ExtractInterface;
 use Tightenco\Collect\Support\Collection;
 
 class CsvExtractor
