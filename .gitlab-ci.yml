@@ -1,0 +1,13 @@
+image: edbizarro/gitlab-ci-pipeline-php:7.2-alpine
+
+cache:
+  paths:
+    - vendor/
+    - ~/.composer/cache/files/
+
+before_script:
+  - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+
+test:
+  script:
+  - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
