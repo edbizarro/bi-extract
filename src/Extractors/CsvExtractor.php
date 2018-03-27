@@ -30,10 +30,10 @@ class CsvExtractor extends Extractor
     public function extract($source): Collection
     {
         $handle = fopen($source, 'rb');
-        $return = new Collection();
+        $return = collect();
 
         while ($row = fgets($handle)) {
-            if (!$this->columns) {
+            if (! $this->columns) {
                 $this->columns = $this->makeColumns($row);
             } else {
                 $return->push($this->makeRow($row));
