@@ -1,12 +1,11 @@
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png"></p>
+
+
 <p align="center">
   <h2>BI - Extract</h2>
 </p>
 
 > Extract data from sources
-
-<p align="center"><img src="https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg"></p>
-
-<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png"></p>
 
 ---
 
