@@ -6,7 +6,6 @@
 
 [![pipeline status](https://gitlab.com/edbizarro/bi-extract/badges/master/pipeline.svg)](https://gitlab.com/edbizarro/bi-extract/commits/master)
 
-
 <p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor-example.png"></p>
 
 ---
