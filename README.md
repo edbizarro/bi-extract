@@ -1,4 +1,4 @@
-<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/example.png"></p>
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/code-example.png"></p>
 
 
 <p align="center">
