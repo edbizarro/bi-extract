@@ -2,12 +2,10 @@
 
 namespace Edbizarro\BiExtract\Interfaces;
 
-use Tightenco\Collect\Support\Collection;
-
 interface ExtractInterface
 {
     /**
-     * @return Collection
+     * @return \Generator
      */
-    public function extract(): Collection;
+    public function extract(): \Generator;
 }

@@ -1,4 +1,4 @@
-<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/csv-extractor.png"></p>
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/example.svg"></p>
 
 
 <p align="center">
@@ -11,7 +11,9 @@
 
 ### Default Extractors
 
-#### CSV
+#### Csv
+
+The Csv extractor uses generator class to avoid consume memory 
 
 ```php
 <?php
@@ -24,9 +26,9 @@
  */ 
 $result = (new CsvExtractor)->extract('PATH/TO/CSV');
 
-$result->each(function($row) {
-  // var_dump($row);
-});
+foreach ($result as $row) {
+    // var_dump($row);
+}
 ```
 
 ![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)

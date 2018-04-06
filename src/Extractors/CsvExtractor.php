@@ -2,8 +2,6 @@
 
 namespace Edbizarro\BiExtract\Extractors;
 
-use Tightenco\Collect\Support\Collection;
-
 class CsvExtractor extends Extractor
 {
     /**
@@ -27,21 +25,26 @@ class CsvExtractor extends Extractor
      */
     public $enclosure = '';
 
-    public function extract($source): Collection
+    /**
+     * Extract columns and rows
+     *
+     * @param $source
+     *
+     * @return \Generator
+     */
+    public function extract($source): \Generator
     {
         $handle = fopen($source, 'rb');
-        $return = collect();
 
         while ($row = fgets($handle)) {
             if (! $this->columns) {
                 $this->columns = $this->makeColumns($row);
             } else {
-                $return->push($this->makeRow($row));
+                yield $this->makeRow($row);
             }
         }
-        fclose($handle);
 
-        return $return;
+        fclose($handle);
     }
 
     /**
