@@ -1,4 +1,4 @@
-<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/example.svg"></p>
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/example.png"></p>
 
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 #### Csv
 
-The Csv extractor uses generator class to avoid consume memory 
+The Csv extractor uses generator class to avoid consume excessive memory. 
 
 ```php
 <?php
