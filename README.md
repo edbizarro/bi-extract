@@ -5,7 +5,7 @@
 > Extract data from sources
 
 <p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/code-example.png"></p>
-<a href="https://styleci.io/repos/126762235"><img src="https://styleci.io/repos/126762235/shield?branch=master" alt="StyleCI"></a>  <a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/github/license/edbizarro/bi-extract.svg" alt="LIcense"></a> 
+<a href="https://styleci.io/repos/126762235"><img src="https://styleci.io/repos/126762235/shield?branch=master" alt="StyleCI"></a>  <a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/github/license/edbizarro/bi-extract.svg" alt="LIcense"></a> <a href='https://semaphoreci.com/edbizarro/bi-extract'> <img src='https://semaphoreci.com/api/v1/edbizarro/bi-extract/branches/master/badge.svg' alt='Build Status'></a>
 
 ---
 
