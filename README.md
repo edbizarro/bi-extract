@@ -1,11 +1,11 @@
-<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/code-example.png"></p>
-
-
 <p align="center">
-  <h2>BI - Extract</h2>
+  <h1>BI - Extract</h1>
 </p>
 
 > Extract data from sources
+
+<p align="center"><img width=100% src="https://raw.githubusercontent.com/edbizarro/bi-extract/master/code-example.png"></p>
+<a href="https://styleci.io/repos/126762235"><img src="https://styleci.io/repos/126762235/shield?branch=master" alt="StyleCI"></a>  <a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/github/license/edbizarro/bi-extract.svg" alt="LIcense"></a> 
 
 ---
 
