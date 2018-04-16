@@ -26,7 +26,7 @@ class CsvExtractor extends Extractor
     public $enclosure = '';
 
     /**
-     * Extract columns and rows
+     * Extract columns and rows.
      *
      * @param $source
      *
@@ -37,7 +37,7 @@ class CsvExtractor extends Extractor
         $handle = fopen($source, 'rb');
 
         while ($row = fgets($handle)) {
-            if (! $this->columns) {
+            if (!$this->columns) {
                 $this->columns = $this->makeColumns($row);
             } else {
                 yield $this->makeRow($row);
