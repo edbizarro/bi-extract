@@ -32,8 +32,11 @@ class CsvExtractor extends Extractor
      *
      * @return \Generator
      */
-    public function extract($source): \Generator
+    public function extract($source, $delimiter = ',', $enclosure = ''): \Generator
     {
+        $this->delimiter = $delimiter;
+        $this->enclosure = $enclosure;
+        
         $handle = fopen($source, 'rb');
 
         while ($row = fgets($handle)) {
