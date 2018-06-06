@@ -34,4 +34,15 @@ foreach ($result as $row) {
 }
 ```
 
+
+## Installation
+
+You can install the package via composer:
+
+``` bash
+composer require edbizarro/bi-extract
+```
+
+---
+
 ![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)
