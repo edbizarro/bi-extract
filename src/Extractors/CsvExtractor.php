@@ -36,7 +36,7 @@ class CsvExtractor extends Extractor
     {
         $this->delimiter = $delimiter;
         $this->enclosure = $enclosure;
-        
+
         $handle = fopen($source, 'rb');
 
         while ($row = fgets($handle)) {
