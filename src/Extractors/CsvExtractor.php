@@ -32,16 +32,16 @@ class CsvExtractor extends Extractor
      *
      * @return \Generator
      */
-    public function extract($source, $delimiter = ',', $enclosure = ''): \Generator
+    public function extract($source, $delimiter = ',', $enclosure = '"'): \Generator
     {
         $this->delimiter = $delimiter;
         $this->enclosure = $enclosure;
 
         $handle = fopen($source, 'rb');
 
-        while ($row = fgets($handle)) {
+        while ($row = fgetcsv($handle, 0, $delimiter, $enclosure)) {
             if (!$this->columns) {
-                $this->columns = $this->makeColumns($row);
+                $this->columns = $row;
             } else {
                 yield $this->makeRow($row);
             }
@@ -57,31 +57,13 @@ class CsvExtractor extends Extractor
      *
      * @return array
      */
-    protected function makeRow(string $row): array
+    protected function makeRow(array $row): array
     {
-        $row = str_getcsv($row, $this->delimiter, $this->enclosure);
         $data = [];
-        foreach ($this->columns as $column => $index) {
-            $data[$column] = $row[$index - 1];
+        foreach ($this->columns as $index => $column) {
+            $data[$column] = $row[$index];
         }
 
         return $data;
-    }
-
-    /**
-     * Make columns based on csv header.
-     *
-     * @param string $header
-     *
-     * @return array
-     */
-    protected function makeColumns(string $header): array
-    {
-        $columns = array_flip(str_getcsv($header, $this->delimiter, $this->enclosure));
-        foreach ($columns as $key => $index) {
-            $columns[$key] = $index + 1;
-        }
-
-        return $columns;
     }
 }
