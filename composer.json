@@ -1,6 +1,7 @@
 {
     "name": "edbizarro/bi-extract",
     "license": "MIT",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Edbizarro\\BiExtract\\": "src/"

@@ -9,6 +9,8 @@
 </p>
 
 <a href='https://semaphoreci.com/edbizarro/bi-extract'> <img src='https://semaphoreci.com/api/v1/edbizarro/bi-extract/branches/master/badge.svg' alt='Build Status'></a> <a href="https://styleci.io/repos/126762235"><img src="https://styleci.io/repos/126762235/shield?branch=master" alt="StyleCI"></a> <a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/github/license/edbizarro/bi-extract.svg" alt="LIcense"></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fedbizarro%2Fbi-extract?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fedbizarro%2Fbi-extract.svg?type=small"/></a>
+<a href="https://packagist.org/packages/edbizarro/bi-extract"><img src="https://poser.pugx.org/edbizarro/bi-extract/v/stable">
+<a href="https://packagist.org/packages/edbizarro/bi-extract"><img src="https://poser.pugx.org/edbizarro/bi-extract/downloads">
 
 ---
 
@@ -16,7 +18,7 @@
 
 #### Csv
 
-The Csv extractor uses generator class to avoid consume excessive memory. 
+The Csv extractor uses generator class to avoid consume excessive memory.
 
 ```php
 <?php
@@ -26,7 +28,7 @@ The Csv extractor uses generator class to avoid consume excessive memory.
  *
  *  name,email
  *  John Doe,johndoe@example.org
- */ 
+ */
 $result = (new CsvExtractor)->extract('PATH/TO/CSV');
 
 foreach ($result as $row) {
