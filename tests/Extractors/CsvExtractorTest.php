@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class CsvExtractorTest extends TestCase
 {
-   /** @test */
+    /** @test */
     public function it_can_read_a_csv()
     {
         $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-extracsv-stub.csv');
@@ -21,21 +21,21 @@ class CsvExtractorTest extends TestCase
         $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-extracsv-stub.csv');
 
         foreach ($result as $value) {
-          $this->assertEquals('John Doe', $value['Name']);
-          $this->assertEquals('São Paulo', $value['State']);
-          $this->assertEquals('Blue', $value['Color']);
+            $this->assertEquals('John Doe', $value['Name']);
+            $this->assertEquals('São Paulo', $value['State']);
+            $this->assertEquals('Blue', $value['Color']);
         }
     }
 
     /** @test */
     public function it_can_extract_a_csv_with_different_delimiter()
     {
-        $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-delimiter-stub.csv', ";");
+        $result = (new CsvExtractor())->extract(__DIR__.'/../Extractors/stubs/csv-delimiter-stub.csv', ';');
 
         foreach ($result as $value) {
-          $this->assertEquals('John Doe', $value['Name']);
-          $this->assertEquals('São Paulo', $value['State']);
-          $this->assertEquals('Blue', $value['Color']);
+            $this->assertEquals('John Doe', $value['Name']);
+            $this->assertEquals('São Paulo', $value['State']);
+            $this->assertEquals('Blue', $value['Color']);
         }
     }
 }
