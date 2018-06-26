@@ -1,5 +1,6 @@
 {
     "name": "edbizarro/bi-extract",
+    "description": "Extract data from sources",
     "license": "MIT",
     "type": "library",
     "autoload": {
