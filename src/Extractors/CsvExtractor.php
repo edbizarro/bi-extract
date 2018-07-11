@@ -61,7 +61,7 @@ class CsvExtractor extends Extractor
     {
         $data = [];
         foreach ($this->columns as $index => $column) {
-            $data[$column] = $row[$index] ?? null;
+            $data[$column] = $row[$index];
         }
 
         return $data;
