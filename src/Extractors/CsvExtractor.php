@@ -39,7 +39,7 @@ class CsvExtractor extends Extractor
 
         $handle = fopen($source, 'rb');
 
-        while (($row = fgetcsv($handle, 0, $delimiter, $enclosure)) !== FALSE) {
+        while (($row = fgetcsv($handle, 0, $delimiter, $enclosure)) !== false) {
             if (!$this->columns) {
                 $this->columns = $row;
             } else {
