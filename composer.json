@@ -13,7 +13,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0 || ^8.0",
-        "friendsofphp/php-cs-fixer": "^2.11"
+        "friendsofphp/php-cs-fixer": "^2.11 || ^3.0"
     },
     "suggest": {
         "edbizarro/bi-connect": "To extract from 3rd party sources."
